@@ -14,6 +14,7 @@ for i in range(toping_num):
 
 '''
 칼로리가 높은 순서대로 측정한다.
+https://1-level-up.tistory.com/7 참고함
 '''
 toping_kcal.sort(reverse=True)
 best = dow_kcal/dow_price
