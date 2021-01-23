@@ -18,16 +18,15 @@ for _ in ball:
 untilcount = 0
 case = 0
 ball_weight = 1
-for _ in ballList:
-    if _ == 0: continue
-    untilcount += _
-    case += ball_weight * (n-untilcount)
-    print(case)
+
+for i in range(1, n+1):
+    if ballList[i] == 0 : continue
+
+    untilcount += ballList[i]
+    case += ballList[i] * (n-untilcount)
     ball_weight += 1
 
 print(case)
-
-
 
 # balls = list(combinations(ball, 2))
 # print(balls)
