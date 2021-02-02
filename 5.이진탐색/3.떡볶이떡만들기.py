@@ -10,7 +10,6 @@ arr = list(map(int, input().split()))
 def binarSearch(arr, m, start, end):
     result = 0
     while start <= end:
-
         total = 0
         mid = (start + end) // 2
         for x in arr:
