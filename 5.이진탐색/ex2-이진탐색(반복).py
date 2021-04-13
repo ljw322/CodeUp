@@ -1,8 +1,7 @@
 '''
-2. binary search loop
-array, target, start, end
-mid(index!)
-2 times return
+2. binary search loop  (array, target, start, end)
+- while end condition, mid, target
+- 2 times return
 '''
 
 array = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]

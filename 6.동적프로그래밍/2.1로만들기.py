@@ -13,7 +13,6 @@ a = [0] * 30001      # 참고로 a[1] = 0이다.
 
 for i in range(2, x+1):
     a[i] = a[i-1] + 1
-    temp = a[i]
 
     if i % 2 == 0:
         a[i] = min(a[i], a[i//2] + 1)
@@ -23,10 +22,12 @@ for i in range(2, x+1):
 
     if i % 5 == 0:
         a[i] = min(a[i], a[i//5] + 1)
-    print(i, temp, a[i])
+    
 
-for x in range(0, x+1):
-    print(a[x], end=" ")
+# for x in range(0, x+1):
+#     print(a[x], end=" ")
+
+print(a[x])
 
 
 

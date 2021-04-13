@@ -1,9 +1,7 @@
 '''
-1. binary search recursion
-array, target, start, end
-end condition, mid(index!)
-find, if target small, if target big
-4 times return
+1. binary search recursion  (array, target, start, end)
+- end condition, mid, target
+- 4 times return
 '''
 
 array = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
@@ -13,8 +11,8 @@ def binarySearch(array, target, start, end):
 
     mid = (start+end) // 2
 
-    if array[mid] == target: return mid
-
+    if array[mid] == target:
+        return mid
     elif target < array[mid]:
         return binarySearch(array, target, start, mid-1)
     else:
