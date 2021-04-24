@@ -1,5 +1,12 @@
 '''
 3.전보 다익스트라 1차원 distance정보에 INF가 아닌 것들의 갯수 및 시간 총합
+시작점으로부터 각 지점까지 가는 최단경로 !
+0. graph, distance 배열. graph에는 (cost, node)형태로 넣기
+0. heapq에 큐, 시작점(0, node) 넣기, distance도
+1. 큐에 꺼낸 후, 큐에 있는 것이 짧으면 pass
+2. 다른 인접 노드들 확인
+3. 새로운 cost 계산
+4. 새로운 cost 더 짧으면, dist배열 갱신, heapq에 추가
 
 3 2 1
 1 2 4
