@@ -61,3 +61,4 @@ for i in range(1, n+1):
         maxValue = distance[i]
 
 print(count, maxValue)
+print(distance)
